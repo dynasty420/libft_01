@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yut <yut@student.42.fr>                    +#+  +:+       +#+        */
+/*   By: ytorigoe <ytorigoe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/27 13:54:47 by yut               #+#    #+#             */
-/*   Updated: 2023/07/27 20:43:04 by yut              ###   ########.fr       */
+/*   Updated: 2023/07/30 20:13:20 by ytorigoe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,10 +21,10 @@ int	ft_atoi(const char *str)
 	size_t	i;
 	int		sign;
 
-	sign = 1;
-	i = 0;
 	if (str[0] == '\0' && str == NULL)
 		return (0);
+	sign = 1;
+	i = 0;
 	while (str[i] == ' ' || str[i] == '\t' || str[i] == '\n' || str[i] == '\v'
 		|| str[i] == '\f' || str[i] == '\r')
 		i++;
