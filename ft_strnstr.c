@@ -6,7 +6,7 @@
 /*   By: yut <yut@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/26 23:01:59 by yut               #+#    #+#             */
-/*   Updated: 2023/07/28 16:20:19 by yut              ###   ########.fr       */
+/*   Updated: 2023/07/30 23:11:12 by yut              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	size_t	i;
 	size_t	j;
 
-	if (haystack == NULL && len == 0)
+	if (haystack == NULL)
 		return (NULL);
 	if (needle[0] == '\0')
 		return ((char *)haystack);
@@ -39,12 +39,16 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	return (NULL);
 }
 
-// int main()
+// int	main(void)
 // {
-//     // char i[1024] = "ABCDEE";
-//     const char *j = "ABCDEE";
-//     char *a = strnstr(j,"BC",2);
-//     char *b = ft_strnstr(j,"BC",2);
-//     printf("a:%s\nb:%s\n",a,b);
-//     return (0);
+// 	const char	*j;
+// 	char		*a;
+// 	char		*b;
+
+// 	// char i[1024] = "ABCDEE";
+// 	j = "ABCDEE";
+// 	a = strnstr(NULL, '\0', 0);
+// 	b = ft_strnstr(NULL, '\0', 0);
+// 	printf("a:%s\nb:%s\n", a, b);
+// 	return (0);
 // }

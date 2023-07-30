@@ -6,7 +6,7 @@
 /*   By: yut <yut@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/26 22:32:45 by yut               #+#    #+#             */
-/*   Updated: 2023/07/27 20:42:25 by yut              ###   ########.fr       */
+/*   Updated: 2023/07/30 21:48:54 by yut              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,12 +26,17 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	return (0);
 }
 
-// int main()
-// {
-//     char *i = "ABCC";
-//     char *j = "ABCD";
-//     int a = strncmp(i,j,4);
-//     int b = ft_strncmp(i,j,4);
-//     printf("a:%d\nb:%d\n",a,b);
-//     return (0);
-// }
+int	main(void)
+{
+	char	*i;
+	char	*j;
+	int		a;
+	int		b;
+
+	i = "A";
+	j = "A";
+	a = strncmp(i, j, 4);
+	b = ft_strncmp(i, j, 4);
+	printf("a:%d\nb:%d\n", a, b);
+	return (0);
+}

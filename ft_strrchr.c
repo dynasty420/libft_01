@@ -6,7 +6,7 @@
 /*   By: yut <yut@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/26 21:46:30 by yut               #+#    #+#             */
-/*   Updated: 2023/07/28 16:20:44 by yut              ###   ########.fr       */
+/*   Updated: 2023/07/30 23:07:56 by yut              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 char	*ft_strrchr(const char *s, int c)
 {
-	char			a;
-	unsigned int	i;
-	char			*adress;
+	char	a;
+	size_t	i;
+	char	*adress;
 
 	a = (char)c;
 	i = 0;
