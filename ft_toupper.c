@@ -6,16 +6,16 @@
 /*   By: yut <yut@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/26 21:44:17 by yut               #+#    #+#             */
-/*   Updated: 2023/07/28 13:48:58 by yut              ###   ########.fr       */
+/*   Updated: 2023/07/30 20:07:59 by yut              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_tolower(int c)
+int	ft_toupper(int c)
 {
-	if (c >= 'A' && c <= 'Z')
-		c = c + 'a' - 'A';
+	if (c >= 'a' && c <= 'z')
+		c = c - ('a' - 'A');
 	return (c);
 }
 
