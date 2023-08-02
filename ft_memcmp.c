@@ -6,7 +6,7 @@
 /*   By: yut <yut@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/27 13:54:47 by yut               #+#    #+#             */
-/*   Updated: 2023/07/30 23:10:31 by yut              ###   ########.fr       */
+/*   Updated: 2023/08/02 16:06:34 by yut              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,6 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 // 	// s = "libft-test-tokyo\0\0\0acdfg\0\0\0\0\0"
 // 	char *s = calloc(30, sizeof(char));
 // 	memcpy(s, "libft-test-tokyo", 17);
-// 	memcpy(s + 20, "acdfg", 5);
-// 	printf("%d\n",memcmp(s, "taa", 3));
-// 	printf("%d\n",ft_memcmp(s, "taa", 3));
+// 	printf("%d\n",memcmp(s, "lll", 3));
+// 	printf("%d\n",ft_memcmp(s, "lll", 3));
 // }

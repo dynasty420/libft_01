@@ -6,7 +6,7 @@
 /*   By: yut <yut@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/27 13:54:47 by yut               #+#    #+#             */
-/*   Updated: 2023/07/30 23:10:28 by yut              ###   ########.fr       */
+/*   Updated: 2023/08/02 16:22:09 by yut              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,11 @@
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {
-	size_t				i;
-	const unsigned char	*tmp_s;
+	size_t			i;
+	unsigned char	*tmp_s;
 
 	i = 0;
-	tmp_s = (const unsigned char *)s;
+	tmp_s = (unsigned char *)s;
 	while (i < n)
 	{
 		if (tmp_s[i] == (unsigned char)c)
@@ -30,12 +30,25 @@ void	*ft_memchr(const void *s, int c, size_t n)
 
 // int	main(void)
 // {
-// 	// s = "libft-test-tokyo\0\0\0acdfg\0\0\0\0\0"
 // 	char *s = calloc(30, sizeof(char));
-// 	memcpy(s, "libft-test-tokyo", 17);
-// 	memcpy(s + 20, "acdfg", 5);
-// 	printf("%p\n",memchr(s, 't', 30));
-// 	printf("%p\n",ft_memchr(s, 't', 30));
 
-//     //  memchr(s, 'l', 30));
+// 	printf("%p\n", memchr(s, '\0', 30));
+// 	printf("%p\n", ft_memchr(s, '\0', 30));
+
+// 	memcpy(s, "libft-test-tokyo", 30);
+
+// 	printf("%p\n", memchr(s, 't', 30));
+// 	printf("%p\n", ft_memchr(s, 't', 30));
+
+// 	printf("%s\n", (char *)memchr(s, 't', 30));
+// 	printf("%s\n", (char *)ft_memchr(s, 't', 30));
+
+// 	char *t = calloc(30, sizeof(char));
+// 	memcpy(t, "libft-test-tokyo", 17);
+
+// 	printf("%p\n", strchr(t, 't'));
+// 	printf("%p\n", ft_strchr(t, 't'));
+
+// 	printf("%s\n", strchr(t, 't'));
+// 	printf("%s\n", ft_strchr(t, 't'));
 // }
