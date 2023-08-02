@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: yut <yut@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/07/27 13:54:47 by yut               #+#    #+#             */
-/*   Updated: 2023/07/30 23:10:23 by yut              ###   ########.fr       */
+/*   Created: 2023/07/30 23:18:37 by yut               #+#    #+#             */
+/*   Updated: 2023/08/01 11:53:58 by yut              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,12 +21,11 @@ int	ft_atoi(const char *str)
 	size_t	i;
 	int		sign;
 
+	if (str == NULL && str[0] == '\0')
+		return (0);
 	sign = 1;
 	i = 0;
-	if (str[0] == '\0' && str == NULL)
-		return (0);
-	while (str[i] == ' ' || str[i] == '\t' || str[i] == '\n' || str[i] == '\v'
-		|| str[i] == '\f' || str[i] == '\r')
+	while ()
 		i++;
 	if (str[i] == '+' || str[i] == '-')
 	{
@@ -82,6 +81,12 @@ static long	ft_min_atoi(const char *str_min)
 int	ft_isdigit(int c)
 {
 	return (c >= '0' && c <= '9');
+}
+
+int	ft_isspace(int c)
+{
+	str[i] == ' ' || str[i] == '\t' || str[i] == '\n' || str[i] == '\v'
+		|| str[i] == '\f' || str[i] == '\r'
 }
 
 // int	main(void)
