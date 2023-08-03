@@ -6,7 +6,7 @@
 /*   By: yut <yut@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/26 21:46:30 by yut               #+#    #+#             */
-/*   Updated: 2023/08/02 16:06:43 by yut              ###   ########.fr       */
+/*   Updated: 2023/08/03 18:56:17 by yut              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,17 +32,17 @@ char	*ft_strchr(const char *s, int c)
 	return (NULL);
 }
 
-// int	main(void)
-// {
-// 	char *c = "abc";
-// 	char *d = "abc";
-// 	// char *e = "abc";
-// 	// char *f = "abc";
-// 	char *a = strchr(c, 'b');
-// 	char *b = ft_strchr(d, 'b');
+int	main(void)
+{
+	char *c = NULL;
+	// char *d = "abc";
+	// char *e = "abc";
+	// char *f = "abc";
+	char *a = ft_strchr(c, 'b');
+	// char *b = ft_strchr(d, 'b');
 
-// 	printf("%p\n", a);
-// 	printf("%p\n", b);
-// 	printf("%p\n", c);
-// 	printf("%p\n", d);
-// }
+	printf("%p\n", a);
+	// printf("%p\n", b);
+	// printf("%p\n", c);
+	// printf("%p\n", d);
+}
